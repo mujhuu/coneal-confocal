@@ -21,8 +21,8 @@ pip install -r requirements.txt
 ### **Running the Classification Models:**
 
 ```
-python jct_classification.py \
---data_root /home/u22515072/a_eye_confocal/data/cornealconfocal \
+python classification.py \
+--data_root ./data/cornealconfocal \
 --model_type resnet18 
 ```
 
@@ -34,8 +34,9 @@ python jct_classification.py \
 ### **Running the Segmentation Models:**
 
 ```
-python jct_segmentation.py \
---data_root /home/u22515072/a_eye_confocal/data/cornealconfocal/Lesion \
+cd segmentation
+python segmentation.py \
+--data_root ../data/cornealconfocal/Lesion \
 --model_type unet
 ```
 
